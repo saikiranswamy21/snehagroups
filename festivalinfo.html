@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festivals of India</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff6f00, #ff8f00);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    ol {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      list-style: none;
+      background: #ffffffcc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    ol li {
+      margin: 12px 0;
+      padding: 10px;
+      background: #fff3e0;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    ol li:hover {
+      background: #ffe0b2;
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+
+    ol li a {
+      text-decoration: none;
+      color: #d35400;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+    }
+
+    #festivalInfo {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    #festivalInfo h2 {
+      color: #e65100;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #festivalInfo p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+      color: #555;
+    }
+
+    #festivalInfo img {
+      display: block;
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      margin: 15px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, #ff6f00, #ff8f00);
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 2px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #666;
+      background: #fff3e0;
+      border-top: 1px solid #ddd;
+    }
+
+    footer a {
+      color: #d35400;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #e65100;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Festivals Celebrated in India</h1>
+  </header>
+
+  <p>✨ Click on a festival to view its details ✨</p>
+
+  <ol>
+    <li><a href="#" onclick="showFestival('diwali')">Diwali</a></li>
+    <li><a href="#" onclick="showFestival('holi')">Holi</a></li>
+    <li><a href="#" onclick="showFestival('eid')">Eid-ul-Fitr</a></li>
+    <li><a href="#" onclick="showFestival('christmas')">Christmas</a></li>
+    <li><a href="#" onclick="showFestival('pongal')">Pongal</a></li>
+    <li><a href="#" onclick="showFestival('rakshaBandhan')">Raksha Bandhan</a></li>
+    <li><a href="#" onclick="showFestival('ganeshChaturthi')">Ganesh Chaturthi</a></li>
+    <li><a href="#" onclick="showFestival('onam')">Onam</a></li>
+  </ol>
+
+  <hr />
+
+  <div id="festivalInfo">
+    <h2>Welcome!</h2>
+    <p>Select a festival from the list above to see details here.</p>
+  </div>
+
+  <footer>
+    © 2025 Festivals of India | Follow us on 
+    <a href="https://www.instagram.com/saikiranswamy21" target="_blank">Instagram</a>
+  </footer>
+
+  <script>
+    function showFestival(festival) {
+      var info = document.getElementById("festivalInfo");
+      var html = "";
+
+      switch (festival) {
+        case "diwali":
+          html = "<h2>Diwali</h2><p><strong>The festival of lights</strong>, symbolizing victory of good over evil. Celebrated with diyas, sweets, and fireworks across India.</p>" +
+                 "<img src='images/diwali.png' alt='Diwali'>";
+          break;
+        case "holi":
+          html = "<h2>Holi</h2><p><strong>The festival of colors</strong>, marking the arrival of spring. People play with colored powders, dance, and celebrate with sweets.</p>" +
+                 "<img src='images/holi.png' alt='Holi'>";
+          break;
+        case "eid":
+          html = "<h2>Eid-ul-Fitr</h2><p>A major Islamic festival celebrated at the end of Ramadan. Includes prayers, feasting, and giving charity.</p>" +
+                 "<img src='images/eid.png' alt='Eid'>";
+          break;
+        case "christmas":
+          html = "<h2>Christmas</h2><p>Celebrates the birth of Jesus Christ. Marked by decorations, carols, midnight mass, and exchanging gifts.</p>" +
+                 "<img src='images/christmas.png' alt='Christmas'>";
+          break;
+        case "pongal":
+          html = "<h2>Pongal</h2><p>A Tamil harvest festival celebrated with special dishes, new clothes, and thanksgiving to the Sun God.</p>" +
+                 "<img src='images/pongal.png' alt='Pongal'>";
+          break;
+        case "rakshaBandhan":
+          html = "<h2>Raksha Bandhan</h2><p>Celebrates the bond between brothers and sisters. Sisters tie a rakhi on the brother's wrist for protection.</p>" +
+                 "<img src='images/rakshaBandhan.png' alt='Raksha Bandhan'>";
+          break;
+        case "ganeshChaturthi":
+          html = "<h2>Ganesh Chaturthi</h2><p>Celebrates the birth of Lord Ganesha. Devotees install clay idols at home and in public pandals.</p>" +
+                 "<img src='images/ganesh.png' alt='Ganesh Chaturthi'>";
+          break;
+        case "onam":
+          html = "<h2>Onam</h2><p>Harvest festival from Kerala, featuring flower rangoli (Pookalam), boat races, and traditional feast (Sadhya).</p>" +
+                 "<img src='images/onam.jpg' alt='Onam'>";
+          break;
+        default:
+          html = "<h2>Festival</h2><p>Details coming soon...</p>";
+      }
+
+      info.innerHTML = html;
+    }
+  </script>
+
+</body>
+</html>
