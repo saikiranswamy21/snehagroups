@@ -48,7 +48,7 @@ nav a:hover {
 
 /* Hero Section (Home Page) */
 .hero {
-  background: url("images/background.png") center/cover no-repeat;
+  background: url("background.png") center/cover no-repeat;
   padding: 4rem 1rem;
   text-align: center;
   color: white;
