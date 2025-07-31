@@ -137,10 +137,23 @@
 <body>
 
   <header>
-    <h1>Festivals Celebrated in India</h1>
+    
+    
+    <h1>Festival</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="purchase.html">Shop</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="festivalinfo.html">Explore Indian Festivals</a>
+      <a href="sound.html"> Mantras</a>
+    </nav>
+  
   </header>
-
+   <p>Festivals Celebrated in India</p>
   <p>✨ Click on a festival to view its details ✨</p>
+  
 
   <ol>
     <li><a href="#" onclick="showFestival('diwali')">Diwali</a></li>
@@ -160,10 +173,8 @@
     <p>Select a festival from the list above to see details here.</p>
   </div>
 
-  <footer>
-    © 2025 Festivals of India | Follow us on 
-    <a href="https://www.instagram.com/saikiranswamy21" target="_blank">Instagram</a>
-  </footer>
+  
+    
 
   <script>
     function showFestival(festival) {
@@ -172,37 +183,287 @@
 
       switch (festival) {
         case "diwali":
-          html = "<h2>Diwali</h2><p><strong>The festival of lights</strong>, symbolizing victory of good over evil. Celebrated with diyas, sweets, and fireworks across India.</p>" +
-                 "<img src='diwali.png' alt='Diwali'>";
-          break;
+  html = `
+    <h2>🪔 Diwali – The Festival of Lights</h2>
+    <p><strong>Diwali</strong>, also known as Deepavali, is one of the most widely celebrated festivals in India. It signifies the victory of light over darkness, knowledge over ignorance, and good over evil. Diwali is more than just a celebration — it's a deeply spiritual, cultural, and community experience that brings families together and energizes homes and markets alike.</p>
+
+    <h3>✨ Mythological Story Behind Diwali</h3>
+    <ul>
+      <li><strong>Lord Rama’s Return to Ayodhya (North India):</strong> Lord Rama returned to Ayodhya after 14 years of exile and defeating Ravana. People celebrated with thousands of diyas symbolizing good over evil.</li>
+      <li><strong>Lord Krishna’s Victory Over Narakasura (South India):</strong> Krishna defeated the demon Narakasura and liberated thousands of women.</li>
+      <li><strong>Goddess Lakshmi’s Appearance (West India):</strong> Lakshmi emerged during Samudra Manthan bringing wealth and fortune.</li>
+    </ul>
+
+    <h3>🛕 Rituals & Traditions</h3>
+    <ol>
+      <li><strong>Dhanteras:</strong> Buying gold/silver; homes cleaned and decorated.</li>
+      <li><strong>Naraka Chaturdashi:</strong> Early oil baths, rangoli, and lighting diyas.</li>
+      <li><strong>Lakshmi Puja (Main Diwali Day):</strong> Lamps, Lakshmi-Ganesha puja, sweets, and fireworks.</li>
+      <li><strong>Govardhan Puja:</strong> Commemorates Krishna lifting Govardhan Hill; Annakut feast prepared.</li>
+      <li><strong>Bhai Dooj:</strong> Celebrating sibling bonds with rituals and gifts.</li>
+    </ol>
+
+    <h3>🏡 How to Celebrate Diwali at Home or in Community</h3>
+    <ul>
+      <li><strong>🧹 Preparation:</strong> Clean home, decorate with lights, flowers, and rangolis.</li>
+      <li><strong>🙏 Puja Ritual:</strong> Setup altar, light diyas, offer prayers, perform aarti.</li>
+      <li><strong>🍬 Sweets and Feasting:</strong> Share homemade or purchased treats with loved ones.</li>
+      <li><strong>🎆 Lighting & Fireworks:</strong> Light eco-friendly firecrackers and diyas.</li>
+    </ul>
+
+    
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Diwali isn’t just a festival—it’s a celebration of hope, renewal, and family. Whether you're lighting a diya or starting a new journey, Diwali is the perfect moment to begin with positivity and purpose.</p>
+    
+    <img src='images/diwali.png' alt='Diwali' style='max-width:100%; margin-top:10px;' />
+  `;
+  break;
+
+          
         case "holi":
-          html = "<h2>Holi</h2><p><strong>The festival of colors</strong>, marking the arrival of spring. People play with colored powders, dance, and celebrate with sweets.</p>" +
-                 "<img src='holi.png' alt='Holi'>";
-          break;
+  html = `
+    <h2>🌈 Holi – The Festival of Colors</h2>
+    <p>Holi, also known as the Festival of Colors, is one of the most joyous and vibrant Hindu festivals. It celebrates the arrival of spring, victory of good over evil, and is a time for forgiveness, laughter, and colorful togetherness.</p>
+
+    <h3>📜 Mythological Stories Behind Holi</h3>
+    <ul>
+      <li><strong>Prahlad and Holika:</strong> Devotee Prahlad survives a fire while Holika, the evil sister of demon king Hiranyakashipu, is burned. This symbolizes divine protection and the triumph of faith.</li>
+      <li><strong>Radha and Krishna:</strong> Krishna playfully colored Radha and the gopis, marking the joyous and love-filled origin of Holi festivities in the Braj region.</li>
+    </ul>
+
+    <h3>🪔 Rituals & Traditions</h3>
+    <ol>
+      <li><strong>Holika Dahan:</strong> Bonfires lit on the night before Holi to signify the burning of evil.</li>
+      <li><strong>Rangwali Holi:</strong> People play with colors, water, music, and sweets.</li>
+    </ol>
+
+    <h3>🏡 How to Celebrate Holi</h3>
+    <ul>
+      <li>Wear white and play with organic colors.</li>
+      <li>Host safe and respectful celebrations with music and games.</li>
+      <li>Enjoy traditional foods like gujiya and thandai.</li>
+    </ul>
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Holi is not just about colors—it's about connection, love, laughter, and letting go. For individuals and communities, it brings a sense of freedom and renewal. For businesses, it’s an opportunity to share joy and culture through festive engagement.</p>
+  <img src='images/holi.png' alt='Holi' style='max-width:100%; margin-top:10px;' />
+    `;
+  break;
+
         case "eid":
-          html = "<h2>Eid-ul-Fitr</h2><p>A major Islamic festival celebrated at the end of Ramadan. Includes prayers, feasting, and giving charity.</p>" +
-                 "<img src='eid.png' alt='Eid'>";
-          break;
+  html = `
+    <h2>🌙 Eid-ul-Fitr – The Festival of Breaking the Fast</h2>
+    <p>Eid-ul-Fitr marks the end of the holy month of Ramadan, a period of fasting, prayer, and self-reflection for Muslims around the world. It is a joyous festival filled with gratitude, charity, and togetherness.</p>
+
+    <h3>🕌 Significance of Eid-ul-Fitr</h3>
+    <ul>
+      <li>Celebrates the successful completion of Ramadan, a sacred time of devotion and discipline.</li>
+      <li>It is a day of spiritual renewal, forgiveness, and thanking Allah for the strength shown during fasting.</li>
+    </ul>
+
+    <h3>📜 Traditions & Practices</h3>
+    <ol>
+      <li><strong>Morning Prayer (Eid Salah):</strong> Muslims gather at mosques or open fields to offer a special Eid prayer.</li>
+      <li><strong>Zakat al-Fitr:</strong> A charitable donation given before the Eid prayer to support those in need.</li>
+      <li><strong>Feasting:</strong> Families prepare and share delicious meals, especially sweets like <em>sheer kurma</em>, <em>seviyan</em>, and <em>biriyani</em>.</li>
+      <li><strong>Visiting and Greeting:</strong> People greet each other with "Eid Mubarak" and visit relatives and friends.</li>
+    </ol>
+
+    <h3>🎁 How to Celebrate Eid-ul-Fitr</h3>
+    <ul>
+      <li>Wear new or traditional clothes after a morning bath and prayer.</li>
+      <li>Begin the day by giving to the poor (zakat), followed by attending the Eid prayer.</li>
+      <li>Host or attend Eid feasts with family and friends.</li>
+      <li>Decorate your home with crescent motifs, fairy lights, and festive tableware.</li>
+    </ul>
+
+    
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Eid-ul-Fitr is a beautiful reminder of compassion, community, and gratitude. It brings families together and emphasizes giving back. For entrepreneurs, it offers an opportunity to celebrate tradition while delivering meaningful and thoughtful products or services.</p>
+  <img src='images/eid' alt='eid' style='max-width:100%; margin-top:10px;' />
+    `;
+  break;
+
         case "christmas":
-          html = "<h2>Christmas</h2><p>Celebrates the birth of Jesus Christ. Marked by decorations, carols, midnight mass, and exchanging gifts.</p>" +
-                 "<img src='christmas.png' alt='Christmas'>";
-          break;
+  html = `
+    <h2>🎄 Christmas – The Festival of Joy and Giving</h2>
+    <p>Christmas is a Christian festival that commemorates the birth of Jesus Christ. Celebrated globally on December 25th, it represents joy, hope, kindness, and love. It's a time for togetherness, carols, lights, and heartwarming traditions.</p>
+
+    <h3>📜 The Story of Christmas</h3>
+    <ul>
+      <li>Christmas marks the birth of Jesus Christ in Bethlehem, believed by Christians to be the Son of God and the savior of humanity.</li>
+      <li>It symbolizes the arrival of peace, hope, and salvation in a world of darkness.</li>
+    </ul>
+
+    <h3>🎶 Traditions & Rituals</h3>
+    <ol>
+      <li><strong>Decorating the Christmas Tree:</strong> Homes and churches are adorned with trees, ornaments, and lights.</li>
+      <li><strong>Midnight Mass:</strong> Many attend church services on Christmas Eve to celebrate the nativity of Christ.</li>
+      <li><strong>Gift Giving:</strong> Inspired by the Wise Men and St. Nicholas, people exchange gifts with loved ones.</li>
+      <li><strong>Santa Claus:</strong> The jolly figure who brings gifts to children is based on Saint Nicholas, a generous bishop from Myra.</li>
+    </ol>
+
+    <h3>🏡 How to Celebrate Christmas</h3>
+    <ul>
+      <li>Decorate your home with stars, wreaths, bells, stockings, and lights.</li>
+      <li>Host a family dinner with dishes like roasted meats, cakes, and pies.</li>
+      <li>Listen to Christmas carols and watch holiday movies together.</li>
+      <li>Set up a nativity scene or visit a Christmas market or church nearby.</li>
+    </ul>
+
+
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Christmas is more than a holiday—it's a celebration of love, giving, and renewal. Whether spiritual or cultural, it creates cherished memories and brings warmth to hearts and homes. Businesses too can connect with this spirit by sharing joy through thoughtful services and products.</p>
+  <img src='images/chrisrmas' alt='Christmas' style='max-width:100%; margin-top:10px;' />
+    `;
+  break;
+
         case "pongal":
-          html = "<h2>Pongal</h2><p>A Tamil harvest festival celebrated with special dishes, new clothes, and thanksgiving to the Sun God.</p>" +
-                 "<img src='pongal.png' alt='Pongal'>";
-          break;
+  html = `
+    <h2>🌾 Pongal – Tamil Nadu’s Harvest Festival</h2>
+    <p>Pongal is a four-day harvest festival celebrated predominantly in Tamil Nadu, dedicated to the Sun God (Surya) for a bountiful harvest. It's a time to thank nature, rejoice with family, and enjoy traditional delicacies.</p>
+
+    <h3>📜 Significance and Origins</h3>
+    <ul>
+      <li>The word <strong>"Pongal"</strong> means "to overflow"—symbolizing abundance and prosperity.</li>
+      <li>It coincides with <strong>Makara Sankranti</strong>, marking the Sun's journey northward (Uttarayan).</li>
+    </ul>
+
+    <h3>🪔 Rituals & Celebrations (Four Days)</h3>
+    <ol>
+      <li><strong>Bhogi:</strong> Old belongings are discarded and bonfires are lit to embrace change and new beginnings.</li>
+      <li><strong>Thai Pongal:</strong> The main day, when rice is boiled with milk and jaggery in new pots until it overflows, signifying prosperity.</li>
+      <li><strong>Mattu Pongal:</strong> Cattle are honored and decorated for their role in farming and harvest.</li>
+      <li><strong>Kaanum Pongal:</strong> A day for family outings and bonding, similar to Thanksgiving picnics.</li>
+    </ol>
+
+    <h3>🏡 How to Celebrate Pongal</h3>
+    <ul>
+      <li>Decorate entrances with colorful <strong>kolam</strong> (rangoli) using rice flour.</li>
+      <li>Prepare traditional Pongal dish with rice, jaggery, milk, and ghee.</li>
+      <li>Wear new clothes and visit temples for blessings.</li>
+      <li>Participate in folk dances like <em>Karagattam</em> and <em>Mayilattam</em>.</li>
+    </ul>
+
+    <h3>💡 Small Business Ideas</h3>
+    <ul>
+      <li>Sell traditional Pongal kits (clay pots, turmeric, sugarcane, rice).</li>
+      <li>Offer handmade kolam stencils, brass utensils, and festive wear.</li>
+      <li>Run Pongal food stalls, sweet counters, or local craft fairs.</li>
+    </ul>
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Pongal is a cultural and spiritual celebration of gratitude, sustainability, and prosperity. It reflects the harmony between people, animals, and nature. For businesses, it’s a golden time to showcase tradition-rooted offerings and engage with local communities.</p>
+  <img src='images/pongal.png' alt='pongal' style='max-width:100%; margin-top:10px;' />
+    `;
+  break;
+
+
         case "rakshaBandhan":
-          html = "<h2>Raksha Bandhan</h2><p>Celebrates the bond between brothers and sisters. Sisters tie a rakhi on the brother's wrist for protection.</p>" +
-                 "<img src='rakshaBandhan.png' alt='Raksha Bandhan'>";
-          break;
+  html = `
+    <h2>🎁 Raksha Bandhan – Celebrating the Bond of Protection</h2>
+    <p>Raksha Bandhan is a cherished Indian festival that honors the sacred bond between brothers and sisters. On this day, sisters tie a protective thread (rakhi) on their brothers’ wrists, praying for their happiness and well-being. In return, brothers vow to protect their sisters and often give gifts.</p>
+
+    <h3>📜 Mythological & Cultural Significance</h3>
+    <ul>
+      <li><strong>Draupadi & Krishna:</strong> When Draupadi tied a cloth on Krishna’s bleeding wrist, he vowed to protect her forever—laying the emotional foundation of Raksha Bandhan.</li>
+      <li><strong>Rani Karnavati & Emperor Humayun:</strong> The queen sent a rakhi to Humayun seeking protection during an invasion. He honored her plea, symbolizing the rakhi’s power to bind beyond blood.</li>
+    </ul>
+
+    <h3>🪔 Rituals & Traditions</h3>
+    <ol>
+      <li>Sisters prepare a puja thali with diya, sweets, and rakhi.</li>
+      <li>They apply a tilak on the brother's forehead and tie the rakhi.</li>
+      <li>Brothers give gifts and pledge lifelong support and care.</li>
+      <li>Families gather to celebrate with festive meals and blessings.</li>
+    </ol>
+
+    <h3>🏡 How to Celebrate Raksha Bandhan</h3>
+    <ul>
+      <li>Choose eco-friendly handmade rakhis or DIY your own at home.</li>
+      <li>Send rakhis and gifts virtually for long-distance siblings.</li>
+      <li>Prepare traditional sweets like laddoos, kheer, and barfi.</li>
+    </ul>
+
+
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Raksha Bandhan isn’t just about siblings—it’s about love, trust, and lifelong commitment. It's a heartwarming occasion that offers individuals and small businesses alike the chance to celebrate relationships and tradition through thoughtful gestures and curated offerings.</p>
+  <img src='images/rk.png' alt='Rk' style='max-width:100%; margin-top:10px;' />
+    `;
+  break;
+
         case "ganeshChaturthi":
-          html = "<h2>Ganesh Chaturthi</h2><p>Celebrates the birth of Lord Ganesha. Devotees install clay idols at home and in public pandals.</p>" +
-                 "<img src='ganesh.png' alt='Ganesh Chaturthi'>";
-          break;
-        case "onam":
-          html = "<h2>Onam</h2><p>Harvest festival from Kerala, featuring flower rangoli (Pookalam), boat races, and traditional feast (Sadhya).</p>" +
-                 "<img src='onam.jpg' alt='Onam'>";
-          break;
+  html = `
+    <h2>🐘 Ganesh Chaturthi – Welcoming Lord Ganesha</h2>
+    <p>Ganesh Chaturthi is a grand Hindu festival celebrating the birth of Lord Ganesha, the remover of obstacles and the god of wisdom and prosperity. The festival is especially popular in Maharashtra, Karnataka, and Andhra Pradesh, marked by prayers, processions, and idol immersions.</p>
+
+    <h3>📜 Mythological Significance</h3>
+    <ul>
+      <li><strong>Birth of Ganesha:</strong> Created by Goddess Parvati from sandalwood paste, Ganesha was brought to life to guard her. He later received an elephant head after being revived by Lord Shiva, symbolizing wisdom and strength.</li>
+      <li><strong>Symbolism:</strong> Lord Ganesha’s elephant head represents wisdom; his large ears signify attentiveness, and the mouse symbolizes humility and the ability to overcome any obstacle.</li>
+    </ul>
+
+    <h3>🪔 Rituals & Traditions</h3>
+    <ol>
+      <li>Idols of Ganesha are installed at homes and in public pandals with devotion.</li>
+      <li>Prayers (aarti), devotional songs, and bhajans are sung daily during the festival.</li>
+      <li>Special sweets like <em>modak</em> (Ganesha’s favorite) are offered.</li>
+      <li>On the final day, idols are immersed in water (visarjan) with grand processions.</li>
+    </ol>
+
+    <h3>🏡 How to Celebrate Ganesh Chaturthi</h3>
+    <ul>
+      <li>Bring home eco-friendly Ganesha idols.</li>
+      <li>Decorate your puja space with flowers and lights.</li>
+      <li>Host family aartis, distribute prasad, and share modaks with neighbors.</li>
+    </ul>
+
+    
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Ganesh Chaturthi is more than a religious event—it’s a community celebration that blends devotion, creativity, and culture. For small businesses, it’s a perfect opportunity to serve the needs of eco-conscious, festive consumers through thoughtful and spiritual offerings.</p>
+  <img src='images/ganesh.png' alt='Ganesh' style='max-width:100%; margin-top:10px;' />
+    `;
+  break;
+
+       case "onam":
+  html = `
+    <h2>🌾 Onam – Kerala’s Harvest Festival</h2>
+    <p>Onam is the most prominent festival in Kerala, celebrated with immense joy and cultural pride. It marks the annual homecoming of the mythical King Mahabali and honors the harvest season with grand feasts, floral decorations, and traditional games.</p>
+
+    <h3>📜 Mythological Significance</h3>
+    <ul>
+      <li><strong>King Mahabali:</strong> A generous and beloved ruler who was sent to the netherworld by Vamana (an avatar of Lord Vishnu). As a blessing, he was allowed to return once a year to visit his people, which is commemorated as Onam.</li>
+      <li><strong>Symbolism:</strong> Onam symbolizes the golden age of prosperity, equality, and happiness under Mahabali’s reign.</li>
+    </ul>
+
+    <h3>🪔 Rituals & Traditions</h3>
+    <ol>
+      <li><strong>Pookalam:</strong> Intricate floral rangolis created at entrances to welcome King Mahabali.</li>
+      <li><strong>Onasadya:</strong> A lavish vegetarian feast with over 20 dishes served on banana leaves.</li>
+      <li><strong>Vallam Kali:</strong> Snake boat races held in the backwaters of Kerala.</li>
+      <li><strong>Folk Dances:</strong> Traditional performances like Thiruvathira, Pulikali (tiger dance), and Kathakali.</li>
+    </ol>
+
+    <h3>🏡 How to Celebrate Onam</h3>
+    <ul>
+      <li>Clean and decorate your home with flower carpets.</li>
+      <li>Wear traditional attire like kasavu sarees and mundus.</li>
+      <li>Prepare or attend an Onasadya and join local cultural events.</li>
+    </ul>
+
+   
+
+    <h3>🌟 Final Thoughts</h3>
+    <p>Onam is a celebration of abundance, heritage, and harmony. It brings together families and communities in a colorful tapestry of rituals, food, and fun. For entrepreneurs, Onam is a chance to build culturally rooted experiences and meaningful products for a festive market.</p>
+  <img src='images/onam.png' alt='Onam' style='max-width:100%; margin-top:10px;' />
+    `;
+  break;
+
         default:
           html = "<h2>Festival</h2><p>Details coming soon...</p>";
       }
@@ -211,5 +472,380 @@
     }
   </script>
 
+</body>
+<head>
+  <meta charset="UTF-8">
+  <title>UTSAVI Pooja Kit Catalog – Festival Pooja Kits</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .section {
+      page-break-after: always;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>UTSAVI Pooja Kit Catalog</h1>
+  <h2>Festival Pooja Kits Across India</h2>
+  <p>This catalog provides a detailed list of one special festival per state along with the associated Pooja Kit materials. Use this guide for kit planning, inventory, or presentation purposes.</p>
+
+  <!-- North India -->
+  <h3>North India</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Festival</th>
+        <th>Month</th>
+        <th>Pooja Kit / Materials Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Uttar Pradesh</td>
+        <td>Holi (Vrindavan)</td>
+        <td>March</td>
+        <td>
+          Gulal (colors), water balloons, pichkari, sweets (gujiya), dry fruits, dhoop, incense sticks, Lord Krishna idol
+        </td>
+      </tr>
+      <tr>
+        <td>Punjab</td>
+        <td>Baisakhi</td>
+        <td>April</td>
+        <td>
+          Wheat grains, earthen pot, dhoop, diya, coconut, mustard oil, haldi-kumkum, gur (jaggery), seasonal fruits
+        </td>
+      </tr>
+      <tr>
+        <td>Himachal Pradesh</td>
+        <td>Kullu Dussehra</td>
+        <td>October</td>
+        <td>
+          Durga or Raghunath idol, flowers, camphor, incense, fruits, dry coconut, red cloth, kalash
+        </td>
+      </tr>
+      <tr>
+        <td>Jammu &amp; Kashmir</td>
+        <td>Hemis Festival</td>
+        <td>July</td>
+        <td>
+          Buddhist prayer flags, butter lamps, incense sticks, tsampa (barley flour), traditional offerings (Torma)
+        </td>
+      </tr>
+      <tr>
+        <td>Uttarakhand</td>
+        <td>Ganga Dussehra</td>
+        <td>May–June</td>
+        <td>
+          Ganga water, diya, kalash, flowers, fruits, camphor, dhoop, rice, Tulsi leaves
+        </td>
+      </tr>
+      <tr>
+        <td>Haryana</td>
+        <td>Teej</td>
+        <td>August</td>
+        <td>
+          Mehendi, bangles, sindoor, coconut, diya, haldi-kumkum, seasonal sweets, red cloth
+        </td>
+      </tr>
+      <tr>
+        <td>Delhi</td>
+        <td>Phoolwalon Ki Sair</td>
+        <td>October</td>
+        <td>
+          Floral chadar (offering), agarbatti, camphor, garland, diya, sweets
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- West India -->
+  <h3>West India</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Festival</th>
+        <th>Month</th>
+        <th>Pooja Kit / Materials Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rajasthan</td>
+        <td>Gangaur</td>
+        <td>March–April</td>
+        <td>
+          Gauri idol (clay), earthen pots, wheat grass, flowers, sindoor, mehendi, mirror, haldi-kumkum
+        </td>
+      </tr>
+      <tr>
+        <td>Gujarat</td>
+        <td>Navratri (Garba)</td>
+        <td>September–October</td>
+        <td>
+          Garbo (clay pot with lamp), coconut, kalash, mango leaves, red cloth, Durga idol, flowers, incense
+        </td>
+      </tr>
+      <tr>
+        <td>Maharashtra</td>
+        <td>Ganesh Chaturthi</td>
+        <td>August–September</td>
+        <td>
+          Ganpati idol (clay), modaks, durva grass, red cloth, kalash, camphor, flowers, haldi-kumkum, sweets
+        </td>
+      </tr>
+      <tr>
+        <td>Goa</td>
+        <td>Carnival</td>
+        <td>February</td>
+        <td>
+          <em>No traditional pooja kit</em> – decorative items, costumes, music, and flowers for parade aesthetics
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Central India -->
+  <h3>Central India</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Festival</th>
+        <th>Month</th>
+        <th>Pooja Kit / Materials Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Madhya Pradesh</td>
+        <td>Khajuraho Dance Fest</td>
+        <td>February</td>
+        <td>
+          <em>Cultural event</em> – lamps, rangoli colors, cultural décor (focus on performance rather than ritual pooja)
+        </td>
+      </tr>
+      <tr>
+        <td>Chhattisgarh</td>
+        <td>Bastar Dussehra</td>
+        <td>September–October</td>
+        <td>
+          Local deities’ idols, turmeric, red thread, rice, coconut, wooden/clay animal figures, local grains, camphor
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- South India -->
+  <h3>South India</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Festival</th>
+        <th>Month</th>
+        <th>Pooja Kit / Materials Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tamil Nadu</td>
+        <td>Pongal</td>
+        <td>January</td>
+        <td>
+          Turmeric plant, sugarcane, rice, clay pot, cow dung cakes, banana leaves, fruits, kumkum, flowers
+        </td>
+      </tr>
+      <tr>
+        <td>Kerala</td>
+        <td>Onam</td>
+        <td>August–September</td>
+        <td>
+          Pookalam (flower rangoli), banana leaves, Onam Sadhya ingredients, lamp, incense, Vishnu idol, nivedyam
+        </td>
+      </tr>
+      <tr>
+        <td>Karnataka</td>
+        <td>Mysore Dasara</td>
+        <td>October</td>
+        <td>
+          Chamundeshwari idol, sandalwood paste, red cloth, betel leaves, flowers, coconut, diya, turmeric
+        </td>
+      </tr>
+      <tr>
+        <td>Andhra Pradesh</td>
+        <td>Ugadi</td>
+        <td>March–April</td>
+        <td>
+          Neem leaves, raw mango, tamarind, jaggery, kalash, coconut, flowers, turmeric, diya
+        </td>
+      </tr>
+      <tr>
+        <td>Telangana</td>
+        <td>Bathukamma</td>
+        <td>September–October</td>
+        <td>
+          A variety of flowers (e.g., Thangedu, Gunuka), turmeric, rice flour, diya, earthen plate for arranging the floral stack
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- East India -->
+  <h3>East India</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Festival</th>
+        <th>Month</th>
+        <th>Pooja Kit / Materials Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>West Bengal</td>
+        <td>Durga Puja</td>
+        <td>October</td>
+        <td>
+          Durga idol, sindoor, alta, hibiscus flowers, fruits, incense, camphor, kalash, clay lamps, conch
+        </td>
+      </tr>
+      <tr>
+        <td>Odisha</td>
+        <td>Rath Yatra</td>
+        <td>June–July</td>
+        <td>
+          Lord Jagannath idol (wood), chandan paste, garland, incense, Tulsi leaves, large rath (chariot), ghee lamp
+        </td>
+      </tr>
+      <tr>
+        <td>Bihar</td>
+        <td>Chhath Puja</td>
+        <td>October–November</td>
+        <td>
+          Bamboo basket, sugarcane, coconut, thekua (sweet), diya, milk, fruits (especially banana), arghya vessels
+        </td>
+      </tr>
+      <tr>
+        <td>Jharkhand</td>
+        <td>Sarhul</td>
+        <td>March–April</td>
+        <td>
+          Sal flowers, rice beer, earthen pots, fruits, dhoop, local seeds, and tribal musical instruments
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- North-East India -->
+  <h3>North-East India</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Festival</th>
+        <th>Month</th>
+        <th>Pooja Kit / Materials Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Assam</td>
+        <td>Rongali Bihu</td>
+        <td>April</td>
+        <td>
+          New cloth, pithas (rice cakes), mustard oil lamp, traditional musical instruments, banana leaves
+        </td>
+      </tr>
+      <tr>
+        <td>Meghalaya</td>
+        <td>Wangala Festival</td>
+        <td>November</td>
+        <td>
+          Traditional drum (Nagara), rice beer, local harvest produce, bamboo flutes, tribal attire (ritual focus rather than idol worship)
+        </td>
+      </tr>
+      <tr>
+        <td>Manipur</td>
+        <td>Yaoshang</td>
+        <td>March</td>
+        <td>
+          Colors (similar to Holi), fresh flowers, diya, fruits, thali, offerings to the deity Pakhangba
+        </td>
+      </tr>
+      <tr>
+        <td>Nagaland</td>
+        <td>Hornbill Festival</td>
+        <td>December</td>
+        <td>
+          Traditional headgear, bamboo baskets, rice beer, cultural dance attire, and ceremonial items
+        </td>
+      </tr>
+      <tr>
+        <td>Mizoram</td>
+        <td>Chapchar Kut</td>
+        <td>March</td>
+        <td>
+          Bamboo, traditional harvest food, drum, and decorative items (primarily a cultural celebration)
+        </td>
+      </tr>
+      <tr>
+        <td>Tripura</td>
+        <td>Ker Puja</td>
+        <td>August</td>
+        <td>
+          Bamboo cage, oil lamp, coconut, mustard oil, fruits, and cloth for covering the deity
+        </td>
+      </tr>
+      <tr>
+        <td>Arunachal Pradesh</td>
+        <td>Losar</td>
+        <td>February</td>
+        <td>
+          Butter lamps, incense, tsampa, khada (scarf), traditional Tibetan food, and Buddhist prayer items
+        </td>
+      </tr>
+      <tr>
+        <td>Sikkim</td>
+        <td>Saga Dawa</td>
+        <td>May–June</td>
+        <td>
+          Buddhist scriptures, prayer flags, incense sticks, butter lamps, and water offering bowls
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="text-align: center;">© UTSAVI 2025. All Rights Reserved.
+   <br> <a href="https://www.instagram.com/saikiranswamy21" target="_blank">Follow us on Instagram</a>
+  </p>
+  
+  
 </body>
 </html>
