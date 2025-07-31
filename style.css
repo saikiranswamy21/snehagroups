@@ -48,13 +48,21 @@ nav a:hover {
 
 /* Hero Section (Home Page) */
 .hero {
-  background: url("utsavi banner.jpg") center/cover no-repeat;
+  background: url("images/background.png") center/cover no-repeat;
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+.hero1 {
+  background: url("images/utsavi\ banner.jpg") center/cover no-repeat;
   padding: 4rem 1rem;
   text-align: center;
   color: white;
 }
 
-.btn {
+.btn { 
+  text-align: center;
   background-color: white;
   color: #ff7043;
   padding: 0.75rem 1.5rem;
@@ -64,6 +72,7 @@ nav a:hover {
   margin-top: 1rem;
   font-weight: bold;
   transition: 0.3s ease;
+  
 }
 
 .btn:hover {
