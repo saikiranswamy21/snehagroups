@@ -21,10 +21,11 @@
 
   <main class="content">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
+    <!-- Replace YOUR_FORM_ID with your actual Formspree form ID -->
+    <form action="https://formspree.io/f/mrbkvkao" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send</button>
     </form>
   </main>
