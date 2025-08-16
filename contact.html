@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Festival</title>
+  <title>Customer Feedback | Festival</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,13 +20,36 @@
   </header>
 
   <main class="content">
-    <h2>Contact Us</h2>
-    <!-- Replace YOUR_FORM_ID with your actual Formspree form ID -->
-    <form action="https://formspree.io/f/mrbkvkao" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
+    <h2>Customer Feedback Form</h2>
+    
+    <!-- Replace YOUR_FORM_ID with your actual Formspree form endpoint -->
+    <form action="https://formspree.io/f/xjkodvdg" method="POST">
+      
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your address" rows="3"></textarea>
+
+      <label for="experience">How was your experience with us?</label>
+      <select id="experience" name="experience" required>
+        <option value="">-- Select an option --</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" placeholder="Share your thoughts..." rows="5" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
     </form>
   </main>
 
